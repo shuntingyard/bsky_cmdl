@@ -8,3 +8,8 @@ repository = "https://github.com/shuntingyard/bsky_cmdl/"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+atp_id = { version = "0.1.0", path = "../atp_id" }
+clap = { version = "4.4.6", features = ["derive", "env"] }
+miette = { version = "5.10.0", features = ["fancy"] }
+tokio = { version = "1.33.0", features = ["macros", "rt-multi-thread"] }
+url = "2.4.1"
